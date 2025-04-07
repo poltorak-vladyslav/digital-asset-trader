@@ -57,7 +57,7 @@ contract DigitalAssetTrader {
         payable(msg.sender).transfer(amount);
     }
 }
-
+```
 
 ## Installation
 
