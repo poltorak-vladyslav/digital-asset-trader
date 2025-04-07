@@ -1,5 +1,3 @@
-Ah, I see! Here’s the complete **README.md** file in one piece, with the correct Installation section:
-
 # Decentralized Digital Asset Trading DApp on Ethereum
 
 This project implements a decentralized application (DApp) on the Ethereum platform, allowing users to connect their wallets via MetaMask, deposit and withdraw cryptocurrency (ETH) through a smart contract.
