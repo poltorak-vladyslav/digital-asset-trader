@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Asset Trader</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script defer src="app.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h3 {
+      text-align: center;
+    }
+    input, button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #balance {
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+<h1>Digital Asset Trader</h1>
+
+<button onclick="connectWallet()">Підключити гаманець</button>
+<div id="balance">Баланс: —</div>
+
+<h3>Депозит</h3>
+<input type="number" id="depositAmount" placeholder="Сума в ETH" step="0.01" min="0" />
+<button onclick="deposit()">Внести</button>
+
+<h3>Виведення</h3>
+<input type="number" id="withdrawAmount" placeholder="Сума в ETH" step="0.01" min="0" />
+<button onclick="withdraw()">Вивести</button>
+</body>
+</html>
